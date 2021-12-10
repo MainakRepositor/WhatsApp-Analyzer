@@ -58,9 +58,8 @@ st.sidebar.markdown('''This application is compatible with both `iOS` and\
     `Android` device exported chat.''')
 st.sidebar.markdown(APPLICATION_FEATURE)
 
-# Github button size display
-BUTTON_SIZE = 'count=true&size=large&v=2'
 
+st.sidebar.markdown([Made by: Mainak Chaudhuri]("https://www.linkedin.com/in/mainak-chaudhuri-127898176/"))
 
 
 def add_multilingual_stopwords() -> Dict:
