@@ -50,11 +50,6 @@ if n2.button("Privacy Statement"):
                 `")
             time.sleep(1)
 
-if n3.button("About"):
-    with st.empty():
-        for seconds in range(3):
-            nav_area.write("🧊 For More details Please visit Github Link.")
-            time.sleep(1)
 
 nav_area.write("")
 
@@ -76,19 +71,6 @@ st.sidebar.markdown(APPLICATION_FEATURE)
 # Github button size display
 BUTTON_SIZE = 'count=true&size=large&v=2'
 
-st.sidebar.markdown("`View Code on Github`")
-st.sidebar.markdown(
-    f'''<iframe src="{REPO_URL}&{BUTTON_SIZE}" {FORMAT_BUTTON}>
-    </iframe>''', unsafe_allow_html=True)
-st.sidebar.markdown(
-    f'''<iframe src="{REPO_URL}&type=star&{BUTTON_SIZE}" {FORMAT_BUTTON}>
-    </iframe>''', unsafe_allow_html=True)
-st.sidebar.markdown(
-    f'''<iframe src="{REPO_URL}&type=watch&{BUTTON_SIZE}" {FORMAT_BUTTON}>
-    </iframe>''', unsafe_allow_html=True)
-st.sidebar.markdown(
-    f'''<iframe src="{REPO_URL}&type=fork&{BUTTON_SIZE}" {FORMAT_BUTTON}>
-    </iframe>''', unsafe_allow_html=True)
 
 
 def add_multilingual_stopwords() -> Dict:
