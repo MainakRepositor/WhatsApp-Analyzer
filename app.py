@@ -59,7 +59,7 @@ st.sidebar.markdown('''This application is compatible with both `iOS` and\
 st.sidebar.markdown(APPLICATION_FEATURE)
 
 
-st.write("[Made by Mainak Chaudhuri](https://www.linkedin.com/in/mainak-chaudhuri-127898176/)")
+st.sidebar.markdown("[Made by Mainak Chaudhuri](https://www.linkedin.com/in/mainak-chaudhuri-127898176/)")
 
 
 def add_multilingual_stopwords() -> Dict:
@@ -128,7 +128,7 @@ def next_page():
 
 
 def prev_page():
-    """Pagination page decrement"""
+    """Pagination page Decrement"""
     st.session_state.page -= 1
 
 
@@ -341,7 +341,7 @@ def main():
         "Choose a TXT file only",
         type=['txt'],
         accept_multiple_files=False)
-        st.markdown("The person who chats the most in the group:")
+    st.markdown("The person who chats the most in the group:")    
 
     if uploaded_file is not None:
         # Convert txt string to utf-8 Encoding
