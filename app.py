@@ -341,14 +341,15 @@ def main():
         "Choose a TXT file only",
         type=['txt'],
         accept_multiple_files=False)
-    st.markdown("The person who chats the most in the group:")    
+        
 
     if uploaded_file is not None:
         # Convert txt string to utf-8 Encoding
         data = uploaded_file.getvalue().decode("utf-8")
         # Compatible iOS and Android regex search
+        st.markdown("The person who chats the most in the group:")
         file_process(data, config)
-
+        
     
     
         
