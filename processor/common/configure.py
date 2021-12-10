@@ -20,14 +20,13 @@ Welcome to
                 | |   | | | (_) | (_|  __/\\__ \\__ \\ (_) | |
                 |_|   |_|  \\___/ \\___\\___||___/___/\\___/|_|
 
-    A Data Science Project for Fun :-)
-    build: Version 2.0.1
+    
     """
 
-TITLE = "WhatsApp Chat Processor"
+TITLE = "WhatsApp Chat Analyzer"
 
 # Github button display on sidebar SETUP
-REPO_URL = "https://ghbtns.com/github-btn.html?user=raahoolkumeriya&repo=whatsapp-chat-streamlit"
+REPO_URL = "https://ghbtns.com/github-btn.html?user=MainakRepositor&repo=WhatsApp-Analyzer"
 FORMAT_BUTTON = 'frameborder="0" scrolling="0" width="170" height="30" title="GitHub"'
 
 # Streamlit footer addition and remove the default streamlit features
@@ -60,7 +59,7 @@ MAIN_STYLE = """ <style>
 # Application Features text for display on Sidebar
 APPLICATION_FEATURE = '''
 ** Application Feature: **
-- Multilingual Support
+
 - Individual Messenger Statistics
 - Activity Cluster
 - Emoji's distrubution
