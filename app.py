@@ -341,6 +341,7 @@ def main():
         "Choose a TXT file only",
         type=['txt'],
         accept_multiple_files=False)
+        st.markdown("The person who chats the most in the group:")
 
     if uploaded_file is not None:
         # Convert txt string to utf-8 Encoding
