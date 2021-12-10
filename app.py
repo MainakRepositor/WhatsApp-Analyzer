@@ -200,10 +200,7 @@ def chart_display(data_frame):
     st.info("🔋 Members who shares internet links of information with others")
     st.pyplot(who_shared_links(data_frame))
 
-    st.markdown("----")
-    st.header("🔘 Group highly Active time ")
-    st.pyplot(whatsapp.time_when_group_active(data_frame))
-        
+    
     st.markdown("----")
     st.header("🔘 Most Active Day ")
     st.info("🔋 Member who active for suitable Day")
