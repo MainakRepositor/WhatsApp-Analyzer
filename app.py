@@ -42,28 +42,18 @@ st.set_page_config(
 _, n2, n3 = st.columns([4, 2, 1])
 nav_area = st.empty()
 
-if n2.button("Privacy Statement"):
-    with st.empty():
-        for seconds in range(5):
-            nav_area.success("`🟩 We respect your privacy.\
-                So, your data are not saved nor replicated.\
-                `")
-            time.sleep(1)
-
 
 nav_area.write("")
 
-# Application Setup
-# st.markdown(HIDE_STREAMLIT_STYLE, unsafe_allow_html=True)
-# st.markdown(MAIN_STYLE, unsafe_allow_html=True)
+
 st.title(TITLE)
 
-st.header("Messages in your chat group, `says something?`...Let's find out")
+
 st.subheader("**♟ General Statistics ♟**")
 st.write('''* This app is meant as a playground to explore the whatsApp Chat.
     Try it out by `Uploading WITHOUT MEDIA whatsapp chat export` here.''')
 
-st.sidebar.title("WhatsApp Chat Processor is a Data Science project for Fun")
+st.sidebar.title("WhatsApp Chat Analyzer")
 st.sidebar.markdown('''This application is compatible with both `iOS` and\
     `Android` device exported chat.''')
 st.sidebar.markdown(APPLICATION_FEATURE)
@@ -210,10 +200,10 @@ def chart_display(data_frame):
     st.info("🔋 Members who shares internet links of information with others")
     st.pyplot(who_shared_links(data_frame))
 
-    # st.markdown("----")
-    # st.header("🔘 Group highly Active time ")
-    # st.pyplot(whatsapp.time_when_group_active(data_frame)))
-
+    st.markdown("----")
+    st.header("🔘 Group highly Active time ")
+    st.pyplot(whatsapp.time_when_group_active(data_frame))
+        
     st.markdown("----")
     st.header("🔘 Most Active Day ")
     st.info("🔋 Member who active for suitable Day")
