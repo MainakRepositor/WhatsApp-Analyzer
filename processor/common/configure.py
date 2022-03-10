@@ -35,8 +35,7 @@ HIDE_STREAMLIT_STYLE = """
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 footer:after {
-    content:'copyrights © 2021 rahul.kumeriya@outlook.com\
-        [ DONT FORGET TO PLANT TREES ]' ;
+    content:'copyrights © 2021 mainakc24365@gmail.com';
     visibility: visible;
     display: block;
     position: fixed;
