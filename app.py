@@ -347,7 +347,7 @@ def main():
         # Convert txt string to utf-8 Encoding
         data = uploaded_file.getvalue().decode("utf-8")
         # Compatible iOS and Android regex search
-        st.markdown("The person who chats the most in the group:")
+        st.markdown("The Genesis chatter of the group:")
         file_process(data, config)
         
     
