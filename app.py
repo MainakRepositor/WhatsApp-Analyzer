@@ -50,12 +50,11 @@ st.title(TITLE)
 
 
 st.subheader("**♟ General Statistics ♟**")
-st.write('''* This app is meant as a playground to explore the whatsApp Chat.
+st.write('''* This app is meant as for educational and demonstration purpose only.
     Try it out by `Uploading WITHOUT MEDIA whatsapp chat export` here.''')
 
 st.sidebar.title("WhatsApp Chat Analyzer")
-st.sidebar.markdown('''This application is compatible with both `iOS` and\
-    `Android` device exported chat.''')
+st.sidebar.markdown('''Analyze the chats. Unravel the mysteries behind words''')
 st.sidebar.markdown(APPLICATION_FEATURE)
 
 
