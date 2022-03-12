@@ -302,6 +302,13 @@ def file_process(data, config):
 
     # Calling Combine chart function
     chart_display(data_frame)
+    
+    st.markdown("----")
+    st.header("🔘 Who has Positive Sentiment? ")
+    st.info("🔋 Member sentiment analysis score base on the words used in\
+        messages. Sentiment Score above 0.5 to 1 is consider as Positive.\
+        Pure English words and Phrases is ideal for calcalation")
+    st.pyplot(sentiment_analysis(cloud_df))
 
     st.markdown("----")
     st.header("🔘 Top-10 Media Contributor ")
@@ -309,12 +316,7 @@ def file_process(data, config):
         Video or Documents")
     st.pyplot(top_media_contributor(raw_df))
 
-    st.markdown("----")
-    st.header("🔘 Who has Positive Sentiment? ")
-    st.info("🔋 Member sentiment analysis score base on the words used in\
-        messages. Sentiment Score above 0.5 to 1 is consider as Positive.\
-        Pure English words and Phrases is ideal for calcalation")
-    st.pyplot(sentiment_analysis(cloud_df))
+    
 
     # Footer Message for Tree Plantation
     st.markdown("----")
