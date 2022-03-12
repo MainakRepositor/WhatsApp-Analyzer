@@ -296,12 +296,6 @@ def file_process(data, config):
     text = " ".join(review for review in cloud_df.message)
     generate_word_cloud(
         text, "Word Cloud for Chat words")
-
-    # DataFrame processing w.r.t Day hour and Date
-    whatsapp.day_analysis(data_frame)
-
-    # Calling Combine chart function
-    chart_display(data_frame)
     
     st.markdown("----")
     st.header("🔘 Who has Positive Sentiment? ")
@@ -309,6 +303,14 @@ def file_process(data, config):
         messages. Sentiment Score above 0.5 to 1 is consider as Positive.\
         Pure English words and Phrases is ideal for calcalation")
     st.pyplot(sentiment_analysis(cloud_df))
+
+    # DataFrame processing w.r.t Day hour and Date
+    whatsapp.day_analysis(data_frame)
+
+    # Calling Combine chart function
+    chart_display(data_frame)
+    
+    
 
     st.markdown("----")
     st.header("🔘 Top-10 Media Contributor ")
