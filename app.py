@@ -1,5 +1,5 @@
 """
-Streamlit WhatsApp Chat Processor
+Streamlit WhatsApp Chat Analyzer
 """
 import re
 import os
