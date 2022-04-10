@@ -199,7 +199,7 @@ def chart_display(data_frame):
     st.pyplot(who_shared_links(data_frame))
 
     
-    st.markdown("----")
+    '''st.markdown("----")
     st.header("🔘 Most Active Day ")
     st.info("🔋 Member who active for suitable Day")
     st.pyplot(most_suitable_day(data_frame))
@@ -207,7 +207,7 @@ def chart_display(data_frame):
     st.markdown("----")
     st.header("🔘 Most Active Hour")
     st.info("🔋 Member who active during suitable hours")
-    st.pyplot(most_suitable_hour(data_frame))
+    st.pyplot(most_suitable_hour(data_frame))'''
 
     st.markdown("----")
     st.header("🔘 Member activity Cluster")
@@ -215,11 +215,11 @@ def chart_display(data_frame):
         and Letter by individual member")
     st.write(message_cluster(data_frame))
 
-    st.markdown("----")
+    '''st.markdown("----")
     st.header("🔘 Over the Time Analysis ")
     st.info("🔋 Group activity over the time whatsapp.r.t to\
         number of messages")
-    st.write(time_series_plot(data_frame))
+    st.write(time_series_plot(data_frame))'''
 
     st.markdown("----")
     st.header("🔘 Curious about Emoji's ?")
